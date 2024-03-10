@@ -33,4 +33,4 @@ def decode(message_file):
         if elements[0] in triangular_sequence:
             text += elements[1] + ' '
     return text.strip()  # Strip trailing whitespace before returning the text
-print(decode("coding_qual_input.txt"))
+print(decode("triangular_sequence_data.txt"))
