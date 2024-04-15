@@ -18,7 +18,6 @@ def adjust_prices(prices, k):
     for i in range(0, median_index):
         if prices[i] > k and i <= median_index:
             moves += (prices[i] - k)
-            # if prices[i] 
             prices[i] = prices[i] - (prices[i] - k)
         elif prices[i] < k and i > median_index:
             moves += (k - prices[i])
